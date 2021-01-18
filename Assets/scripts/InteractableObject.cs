@@ -11,6 +11,7 @@ public class InteractableObject : MonoBehaviour
     public UiManager uimanager;
     public Text dialogFenster;
     public string inspectText;
+    public string collectText;
 
     public SpriteRenderer sr;
     public Image img;

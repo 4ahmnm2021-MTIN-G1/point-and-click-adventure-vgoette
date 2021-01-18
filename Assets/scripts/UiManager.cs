@@ -25,6 +25,8 @@ public class UiManager : MonoBehaviour
         Debug.Log("ldfdfjdkfjd");
 
         activeIO.img.sprite = activeIO.sr.sprite;
+
+        dialogFenster.text = activeIO.collectText;
     }
 
 }

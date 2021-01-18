@@ -16,7 +16,7 @@ public class InventoryItem : MonoBehaviour
         if (img.sprite == io.sr.sprite)
         {
             Debug.Log("worked");
-            txt.text = "Das Item wurde gefunden";
+            /*txt.text = "Das Item wurde gefunden";*/
         }
     }
 }
