@@ -8,25 +8,29 @@ public class UiManager : MonoBehaviour
    
     public InteractableObject activeIO;
     public Text dialogFenster;
+    public Button btn_Collect;
 
 
     public void DisplayText()
     {
-        dialogFenster.text = activeIO.inspectText;
+        activeIO.Inspect();
+        activeIO.CommandMenu.active = false;
     }
 
     public void Exit()
     {
         dialogFenster.text = "";
+        activeIO.CommandMenu.active = false;
+
     }
 
     public void CollectItem()
     {
-        Debug.Log("ldfdfjdkfjd");
 
-        activeIO.img.sprite = activeIO.sr.sprite;
+        activeIO.Collect();
+        activeIO.CommandMenu.active = false;
 
-        dialogFenster.text = activeIO.collectText;
+
     }
 
 }
